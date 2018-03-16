@@ -1,0 +1,41 @@
+{
+ "name": "App",
+ "icons": [
+  {
+   "src": "\/32x32.png",
+   "sizes": "32x32",
+   "type": "image\/png",
+   "density": "0.75"
+  },
+  {
+   "src": "\/57x57.png",
+   "sizes": "57x57",
+   "type": "image\/png",
+   "density": "1.0"
+  },
+  {
+   "src": "\/72x72.png",
+   "sizes": "72x72",
+   "type": "image\/png",
+   "density": "1.5"
+  },
+  {
+   "src": "\/120x120.png",
+   "sizes": "120x120",
+   "type": "image\/png",
+   "density": "2.0"
+  },
+  {
+   "src": "\/144x144.png",
+   "sizes": "144x144",
+   "type": "image\/png",
+   "density": "3.0"
+  },
+  {
+   "src": "\/152x152.png",
+   "sizes": "152x152",
+   "type": "image\/png",
+   "density": "4.0"
+  }
+ ]
+}
