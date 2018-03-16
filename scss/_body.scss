@@ -1,0 +1,58 @@
+/*!
+ * Body content
+ */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* error if tags without attr */
+
+img:not([alt]),
+label:not([for]),
+input[type=submit]:not([value]) {
+    outline: 1px dotted red;
+}
+
+
+/* error if first child not used  */
+
+ul>*:not(li),
+ol>*:not(li),
+dl>*:not(dt):not(dd) {
+    outline: 1px dotted red;
+}
+
+input:focus,
+textarea,
+a,
+button {
+    outline: none !important;
+    -webkit-appearance: none !important; //trouble with radiobutton
+}
+
+.clearfix {
+    &:after,
+    &:before {
+        content: "";
+        display: table;
+        height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+}

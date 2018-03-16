@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,900');
+@mixin font-face($name,
+$filename,
+$style,
+$weight) {
+    $folder: '../fonts/';
+    $filepath: $folder + $filename;
+    @font-face {
+        font-family: "#{$name}";
+        font-style: $style;
+        font-weight: $weight;
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf") format('truetype'), url($filepath + ".svg#" + $name + "") format('svg');
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+@include font-face('Glyphicons Halflings',
+'glyphicons-halflings-regular',
+'normal',
+'300');
+@include font-face('Font Awesome',
+'fontawesome-webfont',
+'normal',
+'300');
+$font-icon: 'Glyphicons Halflings';
+$font-awesome: 'Font Awesome';
+$black: #161616 !default;
+$grey: #312b2b !default;
+$white: #fff !default;
+$red: #f7786b !default;
